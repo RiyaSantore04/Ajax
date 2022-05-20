@@ -1,0 +1,6 @@
+
+<% if @student.id.present? %>
+  $('#student').html("<%= j (render partial: 'index') %>")
+<% else %>
+  $('#student').html("<%= j (render partial: 'form') %>")
+<% end %>
